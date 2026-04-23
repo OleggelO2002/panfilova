@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ЛЕВОЕ МЕНЮ */
+.gc-account-leftbar {
+    background: #B90E2B;
+}
+
+.menu-item a {
+    background: #FCF9EA !important;
+    transform: scale(0.8);
+    border-radius: 5px !important;
+    transition: background 0.3s ease;
+}
+
+.menu-item.active a {
+    background: #B90E2B !important;
+    box-shadow: inset 0px 1px 16.8px 7px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5px !important;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a:hover {
+    background: #CAC7BB !important;
+}
+
+.gc-account-user-submenu-bar {
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(7.8px) !important;
+}
+
+.gc-account-user-submenu-bar h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+    color: #3F3F3F;
+}
+
+.subitem-link {
+    color: #B90E2B !important;
+}
+
+.gc-account-user-submenu li a:hover {
+    background: #B90E2B !important;
+    color: #FFF !important;
+}
+
+@media (max-width: 768px) {
+    .gc-account-user-submenu-bar h3 {
+        font-size: 20px;
+    }
+}
+
+*:focus,
+*:focus-visible,
+*:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.main-page-block .container {
+    margin-left: 180px !important;
+}
