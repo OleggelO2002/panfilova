@@ -49,7 +49,10 @@
     .gc-account-user-submenu-bar h3 {
         font-size: 20px;
     }
-    .main-page-block .container {
+}
+
+@media (min-width: 768px) {
+.main-page-block .container {
         margin-left: 180px !important;
 }
 }
