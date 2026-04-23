@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body.chatium_body{
+padding-right: 15px !important;
+padding-left: 15px !important;    
+}
+
+.center-block {
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+}
+:root {
+    --content-width: 1200px !important; /* Ширина контента */
+    --parent-wv: 100vw !important;      /* Ширина родительского элемента или окна браузера */
+}
+
+@media (min-width: 768px) {
+html body{
+        --container-width: min(var(--content-width), calc(var(--parent-wv, 100vw) - 300px - 20px - 36px)) !important;
+    }
+
+#gcAccountUserMenu ~ .gc-main-content.with-left-menu .lite-page.block-set {
+    width: var(--container-width) !important;
+    margin: 0 auto;
+}
+.container{
+width: calc(100vw - 280px) !important; 
+margin-left: 0px !important;
+margin-right: 0px !important;
+padding-right: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+.lesson-header-block {
+  width: 100% !important;  
+}
+
+.lesson-title-value {
+  font-size: 30px !important;  
+}
+    }
+
+.lt-block-wrapper .container {
+margin-top: 0px !important;
+padding-left: 0px !important; 
+padding-right: 0px !important; 
+}
+.container {
+margin-left: 5px !important; 
+margin-right: 5px !important; 
+}
+
+
+.lesson-header-block.row-section {
+  margin: 0 auto;
+  border-bottom: 0px !important ;
+  margin-bottom: 30px;
+}
+
+.lesson-title-value {
+color: #FFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+line-height: 100%;
+}
+
+.lesson-description-value {
+color: #FFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+line-height: 100%;   
+opacity: 0.8
+}
+
+.hidden-xs span {
+color: #FFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+opacity: 0.5
+}
+
+.user-state-label {
+    color: #FFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+opacity: 0.5
+}
+
+.text-right a {
+color: #FFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+line-height: 100%;    
+}
+
+.text-right .hidden-xs {
+color: #FFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+line-height: 100%;    
+}
+
+.lesson-header-block{
+    position: relative;
+    background: #B90E2B !important;
+}
+
+@media (min-width: 768px) {
+    .lesson-header-block {
+        width: 70vw !important;
+    }
+
+}
+
+.lesson-header-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+}
+
+/* ВВЕРХ СТРАНИЦЫ breadcrumb */
+
+
+
+
+/* общий контейнер */
+.custom-nav-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+/.page-header{
+    display: none;
+}
+
+/* базовый стиль кнопок */
+.custom-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* отдельный класс для кнопки "На главную" */
+.home-btn {
+    background: #FCF9EA;
+    color: #B90E2B !important;
+}
+
+/* отдельный класс для кнопки "Назад" */
+.back-btn {
+    background: #B90E2B;
+    color: #FCF9EA !important;
+}
+
+/* базовые стили иконок */
+.custom-nav-btn::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+/* HOME icon */
+.home-btn::before {
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Crect x='8' y='0' width='4' height='4' transform='rotate(90 8 0)' fill='%23B90E2B'/%3E%3Crect x='12' y='4' width='4' height='4' transform='rotate(90 12 4)' fill='%23B90E2B'/%3E%3Crect x='4' y='4' width='4' height='4' transform='rotate(90 4 4)' fill='%23B90E2B'/%3E%3Crect x='4' y='8' width='4' height='4' transform='rotate(90 4 8)' fill='%23B90E2B'/%3E%3Crect x='8' y='8' width='4' height='4' transform='rotate(90 8 8)' fill='%23B90E2B'/%3E%3Crect x='12' y='8' width='4' height='4' transform='rotate(90 12 8)' fill='%23B90E2B'/%3E%3C/svg%3E");
+}
+
+/* BACK icon */
+.back-btn::before {
+    width: 8px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='12' viewBox='0 0 8 12' fill='none'%3E%3Crect y='4' width='4' height='4' fill='%23FCF9EA'/%3E%3Crect x='4' width='4' height='4' fill='%23FCF9EA'/%3E%3Crect x='4' y='8' width='4' height='4' fill='%23FCF9EA'/%3E%3C/svg%3E");
+}
+
+/* скрываем старые элементы */
+.breadcrumb {
+    display: none !important;
+}
+
+.page-header h1 {
+    display: none !important;
+}
+
+
+
+
+
+
+.vhi-root {
+    border-radius: 20px !important;
+}
+
+.lt-video-hosting-with-defence {
+   border-radius: 20px !important; 
+}
+.js--vhi-iframe {
+ border-radius: 20px !important;    
+}
+
+
+
+
+
+
+/* БЛОК ЗАДАНИЕ */
+.lt-lesson-mission-block {
+    background: #FCF9EA;
+    padding-left: 20px;
+}
+
+.lt-lesson-mission-block .answer-form{
+    background: none;
+    border: none !important;
+}
+
+.lt-lesson-mission-block .lesson-mission-wrapper{
+    border: none !important;
+}
+
+.lt-lesson-mission-block h3 {
+    padding-top: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #3F3F3F;
+}
+
+.field-lessonanswer-answer_text .emoji-textarea {
+    border: none !important;   
+    padding-top: 10px;
+    padding-left: 20px;
+    background: #FFFEF6
+}
+
+
+.lt-lesson-mission-block .btn-lg {
+    background: #B90E2B;
+    border: none !important; 
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: transform 0.5s ease
+}
+.lt-lesson-mission-block .btn-lg:hover{
+    transform:  translateY(-5px);
+}
+.lt-lesson-mission-block .btn-save-draft {
+    color: #A0A0A0;
+}
+
+.lt-lesson-mission-block{
+    margin-bottom: 20px;
+}
+.lt-lesson-mission-block .answer-form{
+    padding-left: 0px !important;
+}
+
+
+
+/* =======================
+   ОБЩИЙ СТИЛЬ (одинаковый для всех)
+======================= */
+
+.btn-asanna-download .btn-success {
+    position: relative;
+    width: 100% !important;
+    box-sizing: border-box;
+
+    text-align: left !important;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    background: #FCF9EA !important;
+    color: #363636;
+
+    transition: all 0.3s ease;
+}
+
+/* =======================
+   ИКОНКА (единая логика)
+======================= */
+
+.btn-asanna-download .btn-success::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    transition: transform 0.5s ease;
+}
+
+/* =======================
+   ПК ВЕРСИЯ
+======================= */
+
+@media screen and (min-width: 768px) {
+
+    .btn-asanna-download .btn-success {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 162.5%;
+
+        padding: 35px 60px 35px 50px !important;
+        border-radius: 0px;
+    }
+
+    /* ИКОНКА ПК (ПРАВО) */
+    .btn-asanna-download .btn-success::after {
+        right: 40px;
+        width: 200px;
+        height: 100px;
+
+        background-image: url('https://static.tildacdn.pub/tild3464-6163-4234-a230-653536306534/btn-download.svg');
+    }
+
+    .btn-asanna-download .btn-success:hover::after {
+        transform: translateY(-60%);
+    }
+}
+
+/* =======================
+   МОБИЛЬНАЯ ВЕРСИЯ (ТО ЖЕ, НО МАСШТАБ)
+======================= */
+
+@media screen and (max-width: 768px) {
+
+    .btn-asanna-download .btn-success {
+        font-family: 'Inter'; /* оставляем как в ПК */
+        font-weight: 400;      /* как в ПК */
+        font-size: 18px;       /* просто уменьшение */
+        line-height: 162.5%;
+
+        padding: 25px 25px 75px 20px !important;
+        border-radius: 0px;    /* как в ПК */
+        box-sizing: border-box;
+        text-align: center !important;
+    }
+
+    /* ИКОНКА МОБИЛКА (ТАКАЯ ЖЕ, ПРОСТО МЕНЬШЕ) */
+    .btn-asanna-download .btn-success::after {
+    position: absolute;
+
+    left: 50%;
+    top: auto;
+    bottom: 10px;
+
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 60px;
+
+    background-image: url('https://static.tildacdn.pub/tild3464-6163-4234-a230-653536306534/btn-download.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+}
+
+
+
+
+/* ДОП БЛОК СПИКЕР */
+
+/* основной контейнер */
+.speaker-new-block .my-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0 15px 0px;
+    background: #FCF9EA;
+}
+
+/* ВАЖНО: убираем фиксированную ширину Bootstrap колонки */
+.speaker-new-block .col-md-4 {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin-left: 20px !important;
+    height: 100px;
+}
+
+/* изображение */
+.speaker-new-block img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+/* правая колонка */
+.speaker-new-block .col-md-6 {
+    flex: 1;
+    padding: 0 !important;
+    margin-left: 10px;
+}
+
+/* адаптив */
+@media (max-width: 768px) {
+
+    /* ВАЖНО: сохраняем flex даже на мобилке */
+    .speaker-new-block .my-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* отключаем bootstrap-ломание колонок */
+    .speaker-new-block .col-md-4,
+    .speaker-new-block .col-md-6 {
+        width: auto !important;
+        max-width: none !important;
+        flex: 0 0 auto !important;
+    }
+
+    /* картинка */
+    .speaker-new-block img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    /* убираем лишние отступы */
+    .speaker-new-block .col-md-4 {
+        margin-left: 0 !important;
+        padding: 0 !important;
+        max-height: 70px !important;
+    }
+
+.speaker-new-block .col-md-6 { max-width: 70% !important; }
+
+    .speaker-new-block .col-md-6 {
+        margin-left: 0 !important;
+        padding: 0 !important;
+        flex: 1;
+    }
+    .speaker-new-block .текста p {
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px !important;
+line-height: 100%;
+color: #B90E2B;   
+}
+    .speaker-new-block .f-text p {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px !important;
+line-height: 100%;
+color: #3F3F3F;    
+}
+}
+
+.speaker-new-block .текста p {
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 100%;
+color: #B90E2B;   
+}
+
+.speaker-new-block .f-text p {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 100%;
+color: #3F3F3F;    
+}
+.speaker-new-block .builder-item.part-header.text-left{
+    margin-bottom: 5px !important;
+}
+
+.speaker-new-block .builder-item.part-text.text-left{
+   margin-bottom: 5px !important; 
+}
