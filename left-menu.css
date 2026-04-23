@@ -49,12 +49,27 @@
     .gc-account-user-submenu-bar h3 {
         font-size: 20px;
     }
+
+.toggle-link.without-icon{
+background: #B90E2B;    
+}
+.toggler-item{
+ background: #6F081A !important;   
+}
+
+.gc-account-user-menu{
+ background: #B90E2B !important;       
+}
 }
 
 @media (min-width: 768px) {
 .main-page-block .container {
         margin-left: 180px !important;
 }
+}
+
+.menu-item-icon {
+  max-height: 25px;  
 }
 
 *:focus,
