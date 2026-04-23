@@ -154,3 +154,78 @@
         padding-bottom: 20px !important;
     }
 }
+
+
+@media (max-width: 768px) {
+  .custom-nav-top {
+    margin-left: 0px !important;
+}  
+}
+
+/* общий контейнер */
+.custom-nav-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* базовый стиль кнопок */
+.custom-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* отдельный класс для кнопки "На главную" */
+.home-btn {
+    background: #FCF9EA;
+    color: #B90E2B !important;
+}
+
+/* отдельный класс для кнопки "Назад" */
+.back-btn {
+    background: #B90E2B;
+    color: #FCF9EA !important;
+}
+
+/* базовые стили иконок */
+.custom-nav-btn::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+/* HOME icon */
+.home-btn::before {
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Crect x='8' y='0' width='4' height='4' transform='rotate(90 8 0)' fill='%23B90E2B'/%3E%3Crect x='12' y='4' width='4' height='4' transform='rotate(90 12 4)' fill='%23B90E2B'/%3E%3Crect x='4' y='4' width='4' height='4' transform='rotate(90 4 4)' fill='%23B90E2B'/%3E%3Crect x='4' y='8' width='4' height='4' transform='rotate(90 4 8)' fill='%23B90E2B'/%3E%3Crect x='8' y='8' width='4' height='4' transform='rotate(90 8 8)' fill='%23B90E2B'/%3E%3Crect x='12' y='8' width='4' height='4' transform='rotate(90 12 8)' fill='%23B90E2B'/%3E%3C/svg%3E");
+}
+
+/* BACK icon */
+.back-btn::before {
+    width: 8px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='12' viewBox='0 0 8 12' fill='none'%3E%3Crect y='4' width='4' height='4' fill='%23FCF9EA'/%3E%3Crect x='4' width='4' height='4' fill='%23FCF9EA'/%3E%3Crect x='4' y='8' width='4' height='4' fill='%23FCF9EA'/%3E%3C/svg%3E");
+}
+
+/* скрываем старые элементы */
+.breadcrumbs {
+    display: none !important;
+}
+
+.page-header h1{
+    display: none;
+}
