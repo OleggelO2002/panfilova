@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.lesson-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: none;
+}
+
+[class*="lesson-id-"] {
+    min-height: 231px !important;
+    -webkit-mask: url("https://static.tildacdn.pub/tild6565-6661-4461-a236-653761666433/Subtract.svg") no-repeat center;
+    mask: url("https://static.tildacdn.pub/tild6565-6661-4461-a236-653761666433/Subtract.svg") no-repeat center;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* Нечётные — светлый фон */
+[class*="lesson-id-"]:nth-child(odd) {
+    background: #FCF9EA;
+}
+
+[class*="lesson-id-"]:nth-child(odd) .title,
+[class*="lesson-id-"]:nth-child(odd) .description {
+    color: #B90E2B;
+}
+
+/* Чётные — красный фон */
+[class*="lesson-id-"]:nth-child(even) {
+    background: #B90E2B;
+}
+
+[class*="lesson-id-"]:nth-child(even) .title,
+[class*="lesson-id-"]:nth-child(even) .description {
+    color: #FFFFFF;
+}
+
+.lesson-list .title {
+    font-family: 'Inter';
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 23px !important;
+    line-height: 100% !important;
+}
+
+.lesson-list .description {
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 100% !important;
+}
+
+.item-main-td {
+    padding-bottom: 30px !important;
+}
+
+.lesson-list li table td {
+    vertical-align: bottom !important;
+}
+
+.vmiddle .link.title {
+    margin-right: 0px;
+}
+
+.vmiddle {
+    padding-left: 20px;
+    padding-right: 0px !important;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.lesson-list {
+    background: transparent;
+}
+
+.item-a {
+    height: 100%;
+}
+
+.info {
+    height: 100% !important;
+    background: transparent !important;
+    margin-left: 0px !important;
+    border-left: 0 !important;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info table {
+    height: 100%;
+}
+
+.hidden-xs {
+    display: none;
+}
+
+.user-state-bg {
+    background: transparent !important;
+}
+
+.glyphicon {
+    display: none;
+}
+
+.item-image {
+    background-size: contain !important;
+    position: absolute !important;
+    top: 12% !important;
+    left: 5% !important;
+    width: 36% !important;
+    border-radius: 6px;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 768px) {
+    .lesson-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    [class*="lesson-id-"] {
+        min-height: 260px !important;
+    }
+
+    .lesson-list .title {
+        font-size: 26px !important;
+        max-width: 90%
+    }
+
+    .lesson-list .description {
+        font-size: 14px !important;
+    }
+
+    .item-image {
+        display: block !important;
+        top: 10% !important;
+        left: 3% !important;
+        width: 40% !important;
+        min-height: 100px !important;
+    }
+
+    .vmiddle {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .item-main-td {
+        padding-bottom: 20px !important;
+    }
+}
