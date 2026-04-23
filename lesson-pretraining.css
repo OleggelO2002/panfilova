@@ -140,8 +140,8 @@
     .item-image {
         display: block !important;
         top: 10% !important;
-        left: 3% !important;
-        width: 40% !important;
+        right: 3% !important;
+        width: 59% !important;
         min-height: 100px !important;
     }
 
