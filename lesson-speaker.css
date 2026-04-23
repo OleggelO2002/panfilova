@@ -153,6 +153,12 @@
     }
 }
 
+@media (max-width: 768px) {
+  .custom-nav-top {
+    margin-left: 0px !important;
+}  
+}
+
 /* общий контейнер */
 .custom-nav-top {
     display: flex;
