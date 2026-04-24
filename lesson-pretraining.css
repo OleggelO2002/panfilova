@@ -6,6 +6,21 @@
     background: none;
 }
 
+.user-state-not_reached{
+filter: grayscale(100%) blur(1px);
+opacity: 0.7;  
+}
+
+.lesson-date {
+    color: #B90E2B;
+    font-family: 'Inter';
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    line-height: 100% !important; 
+}
+
+
 [class*="lesson-id-"] {
     min-height: 231px !important;
     -webkit-mask: url("https://static.tildacdn.pub/tild3166-6537-4435-a636-393830346332/Vector.svg") no-repeat center;
@@ -65,7 +80,7 @@
 }
 
 .vmiddle {
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 0px !important;
     margin-top: auto;
     margin-bottom: 0px;
