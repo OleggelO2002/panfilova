@@ -6,11 +6,6 @@
     background: none;
 }
 
-.user-state-not_reached{
-filter: grayscale(100%) blur(1px);
-opacity: 0.7;  
-}
-
 .lesson-date {
     color: #B90E2B;
     font-family: 'Inter';
