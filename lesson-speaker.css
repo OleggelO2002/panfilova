@@ -13,6 +13,9 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
+.user-state-label-ex {
+    font-size: 11px !important;
+}
 
 /* Нечётные — светлый фон */
 [class*="lesson-id-"]:nth-child(odd) {
