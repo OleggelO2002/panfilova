@@ -8,7 +8,7 @@
         wrapper.className = "custom-nav-top";
 
         const homeBtn = document.createElement("a");
-        homeBtn.href = breadcrumb.href;
+        homeBtn.href = "https://school.marketingscience.site/teach/control/stream/view/id/935462360";
         homeBtn.className = "custom-nav-btn home-btn";
         homeBtn.textContent = "На главную";
 
