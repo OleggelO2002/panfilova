@@ -1,25 +1,48 @@
 (function () {
-    const breadcrumb = document.querySelector(".breadcrumb li:first-child a");
     const backLink = document.querySelector(".page-header h1 a");
     const pageHeader = document.querySelector(".page-header");
 
-    if (breadcrumb && backLink && pageHeader && !document.querySelector(".custom-nav-top")) {
-        const wrapper = document.createElement("div");
-        wrapper.className = "custom-nav-top";
+    if (!backLink || !pageHeader || document.querySelector(".custom-nav-top")) return;
 
-        const homeBtn = document.createElement("a");
-        homeBtn.href = "https://school.marketingscience.site/teach/control/stream/view/id/935462360";
-        homeBtn.className = "custom-nav-btn home-btn";
-        homeBtn.textContent = "На главную";
+    const wrapper = document.createElement("div");
+    wrapper.className = "custom-nav-top";
+    wrapper.style.cssText = "display:flex; justify-content:space-between; align-items:center;";
 
-        const backBtn = document.createElement("a");
-        backBtn.href = backLink.href;
-        backBtn.className = "custom-nav-btn back-btn";
-        backBtn.textContent = "Назад";
+    // Левая часть — главная и назад
+    const leftGroup = document.createElement("div");
+    leftGroup.className = "custom-nav-left";
 
-        wrapper.appendChild(homeBtn);
-        wrapper.appendChild(backBtn);
+    const homeBtn = document.createElement("a");
+    homeBtn.href = "https://school.marketingscience.site/teach/control/stream/view/id/935462360";
+    homeBtn.className = "custom-nav-btn home-btn";
+    homeBtn.textContent = "На главную";
 
-        pageHeader.parentNode.insertBefore(wrapper, pageHeader);
+    const backBtn = document.createElement("a");
+    backBtn.href = backLink.href;
+    backBtn.className = "custom-nav-btn back-btn";
+    backBtn.textContent = "Назад";
+
+    leftGroup.appendChild(homeBtn);
+    leftGroup.appendChild(backBtn);
+
+    // Правая часть — следующий блок
+    const nextLink = document.querySelector("td.text-right a");
+
+    if (nextLink) {
+        const rightGroup = document.createElement("div");
+        rightGroup.className = "custom-nav-right";
+
+        const nextBtn = document.createElement("a");
+        nextBtn.href = nextLink.href;
+        nextBtn.className = "custom-nav-btn next-btn";
+        nextBtn.textContent = "След. блок.";
+
+        rightGroup.appendChild(nextBtn);
+        wrapper.appendChild(leftGroup);
+        wrapper.appendChild(rightGroup);
+    } else {
+        wrapper.appendChild(leftGroup);
     }
+
+    pageHeader.parentNode.insertBefore(wrapper, pageHeader);
 })();
