@@ -5,6 +5,10 @@
     background: #B90E2B;
 }
 
+.menu-item-profile .menu-item-icon{
+   max-height: none;
+}
+
 .menu-item a {
     background: #FCF9EA !important;
     transform: scale(0.8);
