@@ -5,6 +5,10 @@ padding-right: 15px !important;
 padding-left: 15px !important;    
 }
 
+.img-slider{
+  max-width: 1200px;  
+}
+
 .lesson-navigation{
     display: none;
 }
