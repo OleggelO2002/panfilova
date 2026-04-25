@@ -41,7 +41,7 @@
 
 [class*="lesson-id-"]:nth-child(even) .title,
 [class*="lesson-id-"]:nth-child(even) .description {
-    color: #FFFFFF;
+    color: #FFFFFF !!important;
 }
 
 .lesson-list .title {
