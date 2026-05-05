@@ -180,6 +180,7 @@ line-height: 100%;
 .home-btn {
     background: #FCF9EA;
     color: #B90E2B !important;
+    margin-right: 20px;
 }
 
 /* отдельный класс для кнопки "Назад" */
