@@ -216,6 +216,11 @@
         box-sizing: border-box;
     }
 
+.vmiddle {
+    padding-top: 40px !important;
+}
+
+    
     [class*="lesson-id-"] {
         min-height: 260px !important;
     }
