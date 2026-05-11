@@ -138,7 +138,7 @@
 
 /* ИЗОБРАЖЕНИЕ НА КАРТОЧКЕ */
 .item-image {
-    background-size: cover !important;
+    background-size: contain !important;
     position: absolute !important;
     bottom: 17% !important;
     left: 0 !important;
@@ -231,6 +231,7 @@
 
     /* изображение — снизу, во всю ширину */
     .item-image {
+        display: block !important;
         bottom: 5% !important;
         left: 0 !important;
         width: 100% !important;
