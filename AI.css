@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.lesson-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: none;
+}
+
+[class*="lesson-id-"] {
+    min-height: 231px !important;
+    -webkit-mask: url("https://static.tildacdn.pub/tild6565-6661-4461-a236-653761666433/Subtract.svg") no-repeat center;
+    mask: url("https://static.tildacdn.pub/tild6565-6661-4461-a236-653761666433/Subtract.svg") no-repeat center;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.user-state-label-ex {
+    font-size: 11px !important;
+}
+
+/* Нечётные — светлый фон */
+[class*="lesson-id-"]:nth-child(odd) {
+    background: #FCF9EA;
+}
+
+[class*="lesson-id-"]:nth-child(odd) .title,
+[class*="lesson-id-"]:nth-child(odd) .description {
+    color: #B90E2B;
+}
+
+/* Чётные — красный фон */
+[class*="lesson-id-"]:nth-child(even) {
+    background: #B90E2B;
+}
+
+[class*="lesson-id-"]:nth-child(even) .title,
+[class*="lesson-id-"]:nth-child(even) .description {
+    color: #FFFFFF;
+}
+
+.item-main-td {
+    vertical-align: top !important;
+}
+
+.lesson-list .title {
+    position: relative !important;
+    font-family: 'Inter';
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 25px !important;
+    line-height: 100% !important;
+    max-width: 30px;
+}
+
+[class*="lesson-id-"]:nth-child(even) .vmiddle::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 60px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M6.95809 18V0H11.0419V18H6.95809ZM0 11.0419V6.95809H18V11.0419H0Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18px 18px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+[class*="lesson-id-"]:nth-child(odd) .vmiddle::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 60px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M6.95809 18V0H11.0419V18H6.95809ZM0 11.0419V6.95809H18V11.0419H0Z' fill='%23B90E2B'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18px 18px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.lesson-list .description {
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 100% !important;
+}
+
+.item-main-td {
+    padding-bottom: 30px !important;
+}
+
+/.vmiddle .link.title {
+    margin-right: 0px;
+}
+
+.vmiddle {
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+    padding-right: 0px !important;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.lesson-list {
+    background: transparent;
+}
+
+.item-a {
+    height: 100%;
+}
+
+.info {
+    height: 100% !important;
+    background: transparent !important;
+    margin-left: 0px !important;
+    border-left: 0 !important;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info table {
+    height: 100%;
+}
+
+.hidden-xs {
+    display: none;
+}
+
+.user-state-bg {
+    background: transparent !important;
+}
+
+.glyphicon {
+    display: none;
+}
+
+.item-image {
+    background-size: contain !important;
+    position: absolute !important;
+    bottom: 17% !important;
+    width: 100% !important;
+    height: 40%;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 768px) {
+    .lesson-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    [class*="lesson-id-"] {
+        min-height: 260px !important;
+    }
+
+    .lesson-list .title {
+        font-size: 26px !important;
+        max-width: 90%
+    }
+
+    .lesson-list .description {
+        font-size: 14px !important;
+    }
+
+    .item-image {
+        display: block !important;
+        top: 10% !important;
+        left: 3% !important;
+        width: 40% !important;
+        min-height: 100px !important;
+    }
+
+    .vmiddle {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .item-main-td {
+        padding-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+  .custom-nav-top {
+    margin-left: 0px !important;
+}  
+}
+
+/* общий контейнер */
+.custom-nav-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* базовый стиль кнопок */
+.custom-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* отдельный класс для кнопки "На главную" */
+.home-btn {
+    background: #FCF9EA;
+    color: #B90E2B !important;
+}
+
+/* отдельный класс для кнопки "Назад" */
+.back-btn {
+    background: #B90E2B;
+    color: #FCF9EA !important;
+}
+
+/* базовые стили иконок */
+.custom-nav-btn::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+/* HOME icon */
+.home-btn::before {
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Crect x='8' y='0' width='4' height='4' transform='rotate(90 8 0)' fill='%23B90E2B'/%3E%3Crect x='12' y='4' width='4' height='4' transform='rotate(90 12 4)' fill='%23B90E2B'/%3E%3Crect x='4' y='4' width='4' height='4' transform='rotate(90 4 4)' fill='%23B90E2B'/%3E%3Crect x='4' y='8' width='4' height='4' transform='rotate(90 4 8)' fill='%23B90E2B'/%3E%3Crect x='8' y='8' width='4' height='4' transform='rotate(90 8 8)' fill='%23B90E2B'/%3E%3Crect x='12' y='8' width='4' height='4' transform='rotate(90 12 8)' fill='%23B90E2B'/%3E%3C/svg%3E");
+}
+
+/* BACK icon */
+.back-btn::before {
+    width: 8px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='12' viewBox='0 0 8 12' fill='none'%3E%3Crect y='4' width='4' height='4' fill='%23FCF9EA'/%3E%3Crect x='4' width='4' height='4' fill='%23FCF9EA'/%3E%3Crect x='4' y='8' width='4' height='4' fill='%23FCF9EA'/%3E%3C/svg%3E");
+}
+
+/* скрываем старые элементы */
+.breadcrumbs {
+    display: none !important;
+}
+
+.page-header h1{
+    display: none;
+}
